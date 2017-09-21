@@ -5,7 +5,7 @@ import webbrowser
 import os
 h = int(input("""
  #----------------------#
- #By:João Costa e Loock#
+ # By:João Costa e Loock#
  #----------------------#
  # [1] - Fazer Wordlist #     
  # [2] - Como Funciona? #
