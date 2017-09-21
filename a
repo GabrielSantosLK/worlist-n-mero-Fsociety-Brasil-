@@ -1,0 +1,54 @@
+#!/usr/bin/env python 
+# -*- coding: utf-8 -*-
+
+import webbrowser
+import os
+h = int(input("""
+ #----------------------#
+ #By:João Costa e Loock#
+ #----------------------#
+ # [1] - Fazer Wordlist #     
+ # [2] - Como Funciona? #
+ #----------------------#
+ OPTION: """))
+while h != 1 and h != 2:
+        h = int(input('>>> '))
+
+if h == 1:                                                                              #J
+        i = 0                                                                           #O
+        arq = input("\n [?] - Nome do arquivo[.txt]: ")                                            #Ã
+        word = int(input("\n [?] - Ate que numero sera feito essa wordlist?: "))               #O
+        print('\n [!] - A Wordlist será Salva no Arquivo %s ' % (arq))                       #.
+        ww = open(arq,'w')                                                              #C
+        while (i <= word):
+                ww.write(str(i) + '\n')
+                i += 1
+        try:
+                webbrowser.open(arq)
+        except:
+                print('\n[-] - Erro ao abrir.')
+                exit()
+              
+
+else:
+        print('''
+ \n [!] - O Programa irá, basicamente, criar uma WordList até o número indicado.
+ \n [!] - Como de exemplo:
+ \n [!] - Se você digitar o número 10, irá aparecer:
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+\n [!] - Espero ter ajudado!
+        ''')
+        time.sleep(0.5)
+        print('\n [!] - O PROGRAMA FECHARAÁ EM 4 SEGUNDOS!')
+        time.sleep(4)
+        exit()
